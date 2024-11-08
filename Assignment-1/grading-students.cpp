@@ -2,7 +2,7 @@
 using namespace std;
 int main(){
     int n;
-    cout<<"enter number of students: ";
+    //cout<<"enter number of students: ";
     cin>>n;
     int grades[n];
     for (int i=0;i<n;i++){
@@ -17,14 +17,15 @@ int main(){
         rnd=5*div;
         diff=rnd-grades[i];
         //cout<<div<<" "<<diff<<" "<<rnd<<endl;
-        if(diff<3){
-            finalgrades[i]=rnd;
-        }
-        else if(diff>=3 || grades[i]<38){
+        if(grades[i]<38 or diff>=3){
             finalgrades[i]=grades[i];
         }
+        else if(diff<3){
+            finalgrades[i]=rnd;
+        }
+        
     }
-    cout<<endl;
+    //cout<<endl;
     for(int i=0;i<n;i++){
         cout<<finalgrades[i]<<endl;
     }
