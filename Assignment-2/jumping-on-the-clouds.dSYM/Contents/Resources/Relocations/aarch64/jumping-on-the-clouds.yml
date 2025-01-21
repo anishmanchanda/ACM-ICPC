@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/anishmanchanda/Documents/GitHub/ACM-ICPC/Assignment-2/jumping-on-the-clouds'
+relocations:     []
+...
