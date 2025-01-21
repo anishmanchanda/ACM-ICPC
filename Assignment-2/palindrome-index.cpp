@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
+<<<<<<< HEAD
 /*
 INEFFECIENT APPROACH
 int palindromeIndex(string s){
@@ -68,5 +69,14 @@ int main(){
     for(int i=0;i<q;i++){
         cout<<palindromeIndex(arr[i])<<endl;
     }
+=======
+
+int palindromeIndex(string s){
+    
+
+}
+
+int main(){
+>>>>>>> 96be2474dc6e2495c63090a84e6946b85edfbf23
     return 0;
 }
