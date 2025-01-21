@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
 using namespace std;
-<<<<<<< HEAD
 /*
 INEFFECIENT APPROACH
 int palindromeIndex(string s){
@@ -41,13 +40,16 @@ int palindromeIndex(string s) {
 
             // Check by skipping the right character
             l = left, r = right - 1;
+            bool isRightValid=true;
             while (l < r) {
                 if (s[l] != s[r]) {
-                    return right;
+                    isRightValid=false;
+                    break;
                 }
                 l++;
                 r--;
             }
+            if(isRightValid) return right;
         }
         left++;
         right--;
@@ -69,14 +71,5 @@ int main(){
     for(int i=0;i<q;i++){
         cout<<palindromeIndex(arr[i])<<endl;
     }
-=======
-
-int palindromeIndex(string s){
-    
-
-}
-
-int main(){
->>>>>>> 96be2474dc6e2495c63090a84e6946b85edfbf23
     return 0;
 }
